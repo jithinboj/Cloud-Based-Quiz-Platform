@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Teachers
+    match /teachers/{teacherId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Students
+    match /students/{studentId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Quizzes
+    match /quizzes/{quizId} {
+      allow read: if true; // anyone can list or view quizzes
+      allow write: if request.auth != null && request.auth.token.role == 'teacher';
+    }
+
+    // Attempts
+    match /attempts/{attemptId} {
+      allow create: if request.auth != null && request.auth.token.role == 'student';
+      allow read: if request.auth != null;
+      allow update, delete: if false; // prevent tampering
+    }
+
+  }
+}
