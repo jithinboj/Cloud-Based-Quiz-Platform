@@ -1,0 +1,26 @@
+/* Global styles for the entire application */
+:root {
+  --primary-color: #4A90E2;
+  --primary-hover-color: #357ABD;
+  --secondary-color: #50E3C2;
+  --background-color: #f4f7f6;
+  --text-color: #333;
+  --card-bg-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --error-color: #e74c3c;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
