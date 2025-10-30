@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.main-content {
+  padding: 20px;
+  margin-top: 80px; /* Adjust based on Header height */
+}
