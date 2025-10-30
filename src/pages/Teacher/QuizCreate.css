@@ -1,0 +1,122 @@
+.quiz-create-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.quiz-form {
+  background: var(--card-bg-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.quiz-form h2, .quiz-form h3 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.question-block {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.question-block textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.option-input {
+  display: flex;
+  align-items: center;
+}
+
+.option-input input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.option-input input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.add-btn, .submit-btn, .remove-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.add-btn:hover {
+  background-color: #45c9ac;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.remove-btn {
+  background-color: transparent;
+  color: var(--error-color);
+  border: 1px solid var(--error-color);
+  padding: 8px 16px;
+  margin-top: 15px;
+}
+
+.remove-btn:hover {
+  background-color: var(--error-color);
+  color: white;
+}
